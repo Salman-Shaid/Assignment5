@@ -9,7 +9,6 @@ document.getElementById('button-donate').addEventListener('click', function () {
         const newBalance = balance + donateAmount;
         document.getElementById('current-balance').innerText = newBalance;
 
-
         const now = new Date();
         const dateTimeString = now.toString();
 
@@ -19,8 +18,7 @@ document.getElementById('button-donate').addEventListener('click', function () {
         <h4 class= "text-4xl font-bold "> ${donateAmount} tk Donated for Flood Relief in Noakhali , Bangladesh</h4>
 
           <p class="text-gray-700 text-2xl mt-2">Date : <span class="font-semibold">${dateTimeString} </span></p>
-
-        `
+        `;
         document.getElementById('trans-container').appendChild(div);
 
         const needBalance = getTextFiledValueById('total-balance-need');
@@ -31,14 +29,11 @@ document.getElementById('button-donate').addEventListener('click', function () {
         
         document.getElementById('my_modal_5').classList.remove('hidden');
         
-
     }
     else {
         
         alert('Please Enter A Valid Amount! And Try Again');
         
     }
-
-
 
 });

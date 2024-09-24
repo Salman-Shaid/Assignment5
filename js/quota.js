@@ -33,9 +33,7 @@ document.getElementById('button-donate-quota').addEventListener('click',function
 
     }
     else{
-        alert('Please Enter Valid Amount')
+        alert('Please Enter Valid Amount');
     }
-
-    
 
 });

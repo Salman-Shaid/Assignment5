@@ -2,7 +2,6 @@ document.getElementById('button-donate-feni').addEventListener('click',function(
     event.preventDefault();
     console.log('added donation button');
 
-    // getInputFieldValueById();
     const donateAmountFeni = getInputFieldValueById('donate-amount-feni');
     
     if( typeof donateAmountFeni ==='number' && !isNaN(donateAmountFeni && donateAmountFeni > 0) ){
@@ -19,8 +18,7 @@ document.getElementById('button-donate-feni').addEventListener('click',function(
         <h4 class= "text-4xl font-bold "> ${donateAmountFeni} tk Donated for Flood Relief in Feni , Bangladesh</h4>
 
           <p class="text-gray-700 text-2xl mt-4">Date : <span class="font-semibold">${dateTimeString} </span></p>
-
-        `
+        `;
         document.getElementById('trans-container').appendChild(div);
 
         const needBalance = getTextFiledValueById('total-balance-need');
@@ -28,12 +26,9 @@ document.getElementById('button-donate-feni').addEventListener('click',function(
         document.getElementById('total-balance-need').innerText = presentBalance;
         document.getElementById('modal-show-amount').innerText = ` ${donateAmountFeni} tk.`;
 
-
     }
     else{
         alert('Please Enter Valid Amount')
     }
-
-    
 
 });
